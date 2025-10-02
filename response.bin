@@ -1,6 +1,8 @@
 HTTP/1.1 200 OK
-Server:socket server v0.1
-Content-Type: text/plain
+Server: socket server v0.1
+Content-Type: text/html
+Content-Length: 98
+
 <html>
 <head>
 <title>socket server</title>
