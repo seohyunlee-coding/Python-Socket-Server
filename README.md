@@ -50,7 +50,7 @@ python socketServer.py
 - 아래 curl 명령어를 사용하여 멀티파트(Multipart) 형식으로 데이터와 이미지를 포함한 POST 요청을 서버로 전송합니다.
 
 ```Bash
-curl -X POST -S -H "Authorization: JWT b181ce4155b7413ebd1d86f1379151a7e035f8bd" -F "author=1" -H "Accept: application/json" -F "title=curl 테스트" -F "text=API curl로 작성된 AP 테스트 입력 입니다." -F "created_date=2024-06-10T18:34:00+09:00" -F "published_date=2024-06-10T18:34:00+09:00" -F "image=@[이미지 경로 주소]" http://127.0.0.1:8000/api_root/Post/
+curl -X POST -S -H "Authorization: JWT b181ce4155b7413ebd1d86f1379151a7e035f8bd" -H "Accept: application/json" -F "author=1" -F "title=curl 테스트" -F "text=API curl로 작성된 AP 테스트 입력 입니다." -F "created_date=2024-06-10T18:34:00+09:00" -F "published_date=2024-06-10T18:34:00+09:00" -F "image=@C:/Users/dev/Desktop/cat-323262_1280.jpg;type=image/jpg" http://127.0.0.1:8000/api_root/Post/
 ```
 
 ### 3. 결과 확인
